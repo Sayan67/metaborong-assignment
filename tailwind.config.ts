@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary-blue":'#204AF8E5',
+        'bg-black':'#000814',
+        'discord-violate':'#7B61FF'
+      },
+      dropShadow: {
+        'outline-white': '0px 4px 0px #FFFFFF'
       },
       fontFamily: {
         "clash-display": ['ClashDisplay', 'sans-serif'],
