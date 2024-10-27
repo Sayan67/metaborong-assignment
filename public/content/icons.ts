@@ -6,4 +6,5 @@ export const icons =
         analytics:'/icons/analytics.svg',
         guide:'/icons/guide.svg',
         discord:'/icons/discord.svg',
+        rocket:'/icons/rocket.svg',
     }
