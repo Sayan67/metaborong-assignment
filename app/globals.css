@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Neue Montreal fonts*/
+@font-face {
+  font-family: 'NeueMont_Bold';
+  src: url('/fonts/neue_montreal/PPNeueMontreal-Bold.otf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'NeueMont_Regular';
+  src: url('/fonts/neue_montreal/PPNeueMontreal-Book.otf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NeueMont_Medium';
+  src: url('/fonts/neue_montreal/PPNeueMontreal-Medium.otf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NeueMont_Thin';
+  src: url('/fonts/neue_montreal/PPNeueMontreal-Thin.otf') format('truetype');
+  font-weight: 100;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Clash Display font */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Dx Dynamic fonts */
+@font-face {
+  font-family: 'DxDynamix-Bold';
+  src: url('/fonts/dx_dynamic/DxDynamix-Bold.otf') format('truetype');
+  font-weight: 700;
+}
+/* Awesome Serif */
+@font-face {
+  font-family: 'AwesomeSerif';
+  src: url('/fonts/AwesomeSerif.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }

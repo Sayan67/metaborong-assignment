@@ -12,6 +12,18 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        "clash-display": ['ClashDisplay', 'sans-serif'],
+        //Neue Montreal
+        "neue-bold":['NeueMont_Bold', 'sans-serif'],
+        "neue-regular":['NeueMont_Regular', 'sans-serif'],
+        "neue-medium":['NeueMont_Medium', 'sans-serif'],
+        "neue-thin":['NeueMont_Thin', 'sans-serif'],
+        //Dx Dynamic
+        "dx-bold":['DxDynamix-Bold', 'sans-serif'],
+        //Awesome serif
+        "awesome":['AwesomeSerif', 'serif'],
+      },
     },
   },
   plugins: [],
