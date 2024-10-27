@@ -7,12 +7,12 @@ const Hero = () => {
     return (
         <div className='min-h-svh flex flex-col text-white/40 items-center pt-44 xl:pt-60'>
             <div className='flex gap-2'>
-                <Image src={'/images/hodling.svg'} width={246} height={43} alt='hodling' className='animate-rotate-left-2 w-[180px] md:w-[230px] lg:w-[246px]' />
+                <Image src={'/images/hodling.svg'} width={246} height={43} alt='hodling' className='animate-rotate-right-2 w-[180px] md:w-[230px] lg:w-[246px]' />
                 <span className='font-awesome font-bold text-4xl md:text-6xl'>isn&apos;t just a flex,</span>
             </div>
             <div className='flex items-center gap-2'>
                 <span className='font-awesome font-bold text-4xl md:text-6xl'>it is a</span>
-                <Image src={'/images/strategy.svg'} width={246} height={43} alt='strategy' className='animate-rotate-right-2 w-[180px] md:w-[230px] lg:w-[246px]' />
+                <Image src={'/images/strategy.svg'} width={246} height={43} alt='strategy' className='animate-rotate-left-2 w-[180px] md:w-[230px] lg:w-[246px]' />
             </div>
             <div className='flex text-white gap-2 mt-8'>
                 <Link href={'/'} className='bg-discord-violate rounded-xl border border-white drop-shadow-outline-white flex items-center justify-center sm:w-16 w-12 h-fit py-2'>

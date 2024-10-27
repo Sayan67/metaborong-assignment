@@ -7,4 +7,5 @@ export const icons =
         guide:'/icons/guide.svg',
         discord:'/icons/discord.svg',
         rocket:'/icons/rocket.svg',
+        wallet:'/icons/wallet.svg',
     }
