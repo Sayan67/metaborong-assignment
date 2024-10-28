@@ -5,7 +5,6 @@ import { navElements } from '@/public/content/navElements'
 import { icons } from '@/public/content/icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import {ConnectButton } from '@rainbow-me/rainbowkit'
 import { CustomConnectButton } from './home/CustomConnectButton'
 
 const Navbar = () => {

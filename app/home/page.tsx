@@ -1,6 +1,5 @@
 'use client'
 import LeftPage from '@/components/home/LeftPage'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React from 'react'
 
 

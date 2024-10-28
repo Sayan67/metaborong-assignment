@@ -9,6 +9,7 @@ import { transactions } from '@/public/content/dummyData';
 const LeftPage = () => {
     const data = undefined
     const { status, chain } = useAccount()
+    const openAccountModal = useAccountModal()
     return (
         <div className='relative border border-white rounded-xl px-8 w-[500px] shadow-outline-white flex flex-col justify-center items-center pb-6'>
             <div className='pt-4 pb-6 flex justify-between w-full'>
@@ -49,7 +50,7 @@ const LeftPage = () => {
                                 status === 'disconnected' &&
                                 <div>
                                     <h1 className='text-white/30'>Connect to view recent trades</h1>
-                                    <button className='bg-primary-blue rounded-md px-4 py-2 mt-2' onClick={useAccountModal().openAccountModal}>Connect Wallet</button>
+                                    <button className='bg-primary-blue rounded-md px-4 py-2 mt-2' onClick={openAccountModal.openAccountModal}>Connect Wallet</button>
                                 </div>
                             }
                             {status === 'connected' &&
