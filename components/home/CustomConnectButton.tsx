@@ -1,4 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import '@rainbow-me/rainbowkit/styles.css';
+
 export const CustomConnectButton = () => {
   return (
     <ConnectButton.Custom>
@@ -28,12 +30,12 @@ export const CustomConnectButton = () => {
                 userSelect: 'none',
               },
             })}
-            className='border border-white rounded-xl shadow-outline-white px-4 py-3 h-full'
+            className='border border-white rounded-xl shadow-outline-white px-10 py-3 h-full'
           >
             {(() => {
               if (!connected) {
                 return (
-                  <button onClick={openConnectModal} type="button">
+                  <button onClick={openConnectModal} type="button" className='text-nowrap'>
                     Connect Wallet
                   </button>
                 );

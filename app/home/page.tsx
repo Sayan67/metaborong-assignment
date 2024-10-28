@@ -6,7 +6,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-svh flex items-center justify-center'>
+    <div className='min-h-svh flex items-center justify-center pt-40 pb-20'>
       <LeftPage/>
     </div>
   )

@@ -5,14 +5,13 @@ import { navElements } from '@/public/content/navElements'
 import { icons } from '@/public/content/icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import dynamic from 'next/dynamic'
+import {ConnectButton } from '@rainbow-me/rainbowkit'
 import { CustomConnectButton } from './home/CustomConnectButton'
-const  ConnectButton = dynamic(()=>import('@rainbow-me/rainbowkit').then((mod)=>mod.ConnectButton),{ssr:false})
 
 const Navbar = () => {
     const pathname = usePathname()
     return (
-        <div className={`absolute top-8 left-1/2 -translate-x-1/2 gap-2 sm:gap-3 flex items-center px-2 sm:px-0 w-fit ${pathname==='/home'? "justify-center ml-28":"justify-center"}`}>
+        <div className={`absolute top-8 left-1/2 -translate-x-1/2 gap-2 sm:gap-3 flex items-center px-2 sm:px-0 w-fit ${pathname==='/home'? "justify-center ml-28":"justify-center"} z-50`}>
             <div className='rounded-lg flex gap-[30px] sm:gap-[60px] items-center justify-center bg-primary-blue w-fit sm:py-3 sm:pl-4 sm:pr-9 py-2 px-4 border-2 border-white box-border drop-shadow-outline-white'>
                 <a href={'/'} className='w-14 sm:w-20'>
                     <Image src='/logos/mainLogo.svg' width={73} height={32} alt='logo' className='w-20 flex-none' />
