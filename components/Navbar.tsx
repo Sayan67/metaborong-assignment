@@ -5,11 +5,12 @@ import { navElements } from '@/public/content/navElements'
 import { icons } from '@/public/content/icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 const Navbar = () => {
     const pathname = usePathname()
     return (
-        <div className={`absolute top-8 left-1/2 -translate-x-1/2 gap-2 sm:gap-3 flex px-2 sm:px-0 w-full ${pathname==='/home'? "justify-center ml-28":"justify-center"}`}>
+        <div className={`absolute top-8 left-1/2 -translate-x-1/2 gap-2 sm:gap-3 flex items-center px-2 sm:px-0 w-full ${pathname==='/home'? "justify-center ml-28":"justify-center"}`}>
             <div className='rounded-lg flex gap-[30px] sm:gap-[60px] items-center justify-center bg-primary-blue w-fit sm:py-3 sm:pl-4 sm:pr-9 py-2 px-4 border-2 border-white box-border drop-shadow-outline-white'>
                 <Link href={'/'} className='w-14 sm:w-20'>
                     <Image src='/logos/mainLogo.svg' width={73} height={32} alt='logo' className='w-20 flex-none' />
@@ -28,13 +29,8 @@ const Navbar = () => {
                 <Image src={icons.discord} width={32} height={32} alt='discord logo' className='sm:w-8 w-6' />
             </Link>
             {
-                pathname === '/home' && <div>
-                    <button className='flex items-center gap-1 justify-center border-[1.5px] border-white drop-shadow-md rounded-xl px-16 py-2 font-neue-medium h-full'>
-                        <h1 className='text-nowrap'>
-                            Connect Wallet
-                        </h1>
-                        <Image src={icons.wallet} width={20} height={20} alt='wallet' />
-                    </button>
+                pathname === '/home' && <div className=''>
+                    <ConnectButton/>
                 </div>
             }
         </div>
