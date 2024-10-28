@@ -15,8 +15,12 @@ const config: Config = {
         "bg-black": "#000814",
         "discord-violate": "#7B61FF",
       },
+      boxShadow: {
+        "outline-white": "3px 3px 0px #FFFFFF",
+        "thick-text-outline": "0px 0px 0px 2px #FFFFFF",
+      },
       dropShadow: {
-        "outline-white": "0px 4px 0px #FFFFFF",
+        "outline-white": "3px 3px 0px #FFFFFF",
         "thick-text-outline": "0px 0px 0px 2px #FFFFFF",
       },
       fontFamily: {
