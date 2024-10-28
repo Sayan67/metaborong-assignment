@@ -16,11 +16,11 @@ const config: Config = {
         "discord-violate": "#7B61FF",
       },
       boxShadow: {
-        "outline-white": "3px 3px 0px #FFFFFF",
+        "outline-white": "2px 2px 0px #FFFFFF",
         "thick-text-outline": "0px 0px 0px 2px #FFFFFF",
       },
       dropShadow: {
-        "outline-white": "3px 3px 0px #FFFFFF",
+        "outline-white": "2px 2px 0px #FFFFFF",
         "thick-text-outline": "0px 0px 0px 2px #FFFFFF",
       },
       fontFamily: {

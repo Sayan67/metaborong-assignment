@@ -6,13 +6,14 @@ import { useAccount } from 'wagmi';
 import { transactions } from '@/public/content/dummyData';
 
 
+
 const LeftPage = () => {
     const data = undefined
     const { status, chain } = useAccount()
     const openAccountModal = useAccountModal()
     return (
-        <div className='relative border border-white rounded-xl px-8 w-[500px] shadow-outline-white flex flex-col justify-center items-center pb-6'>
-            <div className='pt-4 pb-6 flex justify-between w-full'>
+        <div className='relative border border-white rounded-xl px-8 w-[500px] shadow-outline-white flex flex-col justify-center items-center pb-6 bg-white bg-opacity-[0.07]'>
+            <div className='py-4 flex justify-between w-full'>
                 <h1 className='font-dx-bold'>Analytics</h1>
                 <Image src={icons.info} width={25} height={25} alt='' />
             </div>
@@ -26,13 +27,13 @@ const LeftPage = () => {
                 </div>
                 <div className='space-y-3'>
                     <div className='flex gap-[6px]'>
-                        <Card title='Current Price' value={status==='connected'?1.1 :0} unit={chain?.nativeCurrency.symbol}>
+                        <Card title='Current Price' value={status === 'connected' ? 1.1 : 0} unit={chain?.nativeCurrency.symbol}>
                             <Image src={icons.currentPrice} width={30} height={30} alt='' />
                         </Card>
-                        <Card title='Total Fees' value={status==='connected'?134.8 :0} unit='M'>
+                        <Card title='Total Fees' value={status === 'connected' ? 134.8 : 0} unit='M'>
                             <Image src={icons.tvl} width={30} height={30} alt='' />
                         </Card>
-                        <Card title='Total Fees' value={status==='connected'?13.5 :0} unit='M'>
+                        <Card title='Total Fees' value={status === 'connected' ? 13.5 : 0} unit='M'>
                             <Image src={icons.oneDayPrice} width={30} height={30} alt='' />
                         </Card>
 
@@ -78,6 +79,18 @@ const LeftPage = () => {
                     </div>
 
                 </div>
+            </div>
+            <div className='absolute right-1 top-1/2 -translate-y-1/2 space-y-36 flex flex-col items-end -z-0'>
+                {new Array(3).fill(0).map((_, index) => {
+                    const lineNo = `/icons/line${index + 1}.svg`
+                    return (
+                        <div key={index} className=' w-[10rem] relative flex flex-col items-end'>
+                            <div className='bg-white rounded-full size-4'></div>
+                            <Image layout='intrinsic' src={lineNo} width={74} height={4} alt='line' className='absolute w-[10rem] -right-[95%] top-1/2 -translate-y-[45%]'></Image>
+                        </div>
+                    )
+                }
+                )}
             </div>
 
         </div>

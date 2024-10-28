@@ -11,4 +11,13 @@ export const icons =
         currentPrice:'/icons/currentPrice.svg',
         tvl:'/icons/tvl.svg',
         oneDayPrice:'/icons/oneDayPrice.svg',
+        setting:'/icons/setting.svg',
+        dogecoin:'/icons/dogecoin.svg',
+        shiba:'/icons/shiba.svg',
+        pepe:'/icons/pepe.svg',
+        bonk:'/icons/bonk.svg',
+        floki:'/icons/floki.svg',
+        "arrow-down":'/icons/arrow-down.svg',
+        cross:'/icons/cross.svg',
+        coinsswap:'/icons/coinsswap.svg',
     }

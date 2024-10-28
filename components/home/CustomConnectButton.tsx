@@ -30,7 +30,7 @@ export const CustomConnectButton = () => {
                 userSelect: 'none',
               },
             })}
-            className='border border-white rounded-xl shadow-outline-white px-10 py-3 h-full'
+            className='border border-white rounded-xl shadow-outline-white px-10 py-4 h-full'
           >
             {(() => {
               if (!connected) {
@@ -53,6 +53,7 @@ export const CustomConnectButton = () => {
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
                     type="button"
+                    className='border-r border-white pr-2'
                   >
                     {chain.hasIcon && (
                       <div

@@ -5,7 +5,7 @@ import { icons } from '@/public/content/icons'
 
 const Hero = () => {
     return (
-        <div className='min-h-svh flex flex-col text-white/40 items-center pt-44 xl:pt-60'>
+        <div className='min-h-svh flex flex-col text-white/40 items-center pt-44 xl:pt-60 pb-40'>
             <div className='flex gap-2'>
                 <Image src={'/images/hodling.svg'} width={246} height={43} alt='hodling' className='animate-rotate-right-2 w-[180px] md:w-[230px] lg:w-[246px]' />
                 <span className='font-awesome font-bold text-4xl md:text-6xl'>isn&apos;t just a flex,</span>
@@ -18,7 +18,7 @@ const Hero = () => {
                 <Link href={'/'} className='bg-discord-violate rounded-xl border border-white drop-shadow-outline-white flex items-center justify-center sm:w-16 w-12 h-fit py-2'>
                     <Image src={icons.discord} width={32} height={32} alt='discord logo' className='md:w-8 sm:w-6 w-4' />
                 </Link>
-                <Link href={'/home'} className='flex items-center justify-center gap-1 border-[1.4px] border-white rounded-xl px-12 py-3 text-xs sm:text-sm md:text-base'>
+                <Link href={'/home'} className='flex items-center justify-center gap-1 border-[1.4px] border-white rounded-xl px-12 py-3 text-xs sm:text-sm md:text-base shadow-outline-white'>
                     <h1>Launch App</h1>
                     <Image src={icons.rocket} width={20} height={20} alt='rocket' className='w-[16px] md:w-[20px]' />
                 </Link>
