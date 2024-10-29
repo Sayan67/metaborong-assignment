@@ -1,6 +1,5 @@
 import { icons } from "@/public/content/icons"
 import Image from "next/image"
-import SelectModal from "../SelectModal"
 import { useAccount } from "wagmi"
 import { Option, sliderPoints } from "./RightPage"
 import WithdrawSelectModal from "../WithdrawSelectModal"

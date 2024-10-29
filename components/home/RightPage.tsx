@@ -7,7 +7,6 @@ import { options } from '../SelectModal'
 import { DepositComponent } from './DepositComponent'
 import { WithdrawComponent } from './WithdrawComponent'
 import { CustomConnectButton } from './CustomConnectButton'
-import SlippageModalBUtton from '../SlippageModalButton'
 import SlippageModalButton from '../SlippageModalButton'
 import { SlippageModal } from '../SlippageModal'
 

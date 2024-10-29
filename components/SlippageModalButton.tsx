@@ -1,6 +1,6 @@
 import { icons } from '@/public/content/icons';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 import { Option } from './home/RightPage';
 
 

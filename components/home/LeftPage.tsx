@@ -9,7 +9,6 @@ import Graph from '../Graph';
 
 
 const LeftPage = () => {
-    const data = undefined
     const { status, chain } = useAccount()
     const openAccountModal = useAccountModal()
     return (
