@@ -1,5 +1,7 @@
+import { icons } from '@/public/content/icons';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
+import Image from 'next/image';
 
 export const CustomConnectButton = () => {
   return (
@@ -30,13 +32,14 @@ export const CustomConnectButton = () => {
                 userSelect: 'none',
               },
             })}
-            className='border border-white rounded-xl shadow-outline-white px-10 py-4 h-full'
+            className=''
           >
             {(() => {
               if (!connected) {
                 return (
-                  <button onClick={openConnectModal} type="button" className='text-nowrap'>
+                  <button onClick={openConnectModal} type="button" className='text-nowrap border border-white rounded-xl shadow-outline-white px-10 py-4 h-full flex items-center gap-2 w-full justify-center cursor-pointer'>
                     Connect Wallet
+                    <Image src={icons.wallet} width={20} height={20} alt='wallet'></Image>
                   </button>
                 );
               }
@@ -48,7 +51,7 @@ export const CustomConnectButton = () => {
                 );
               }
               return (
-                <div style={{ display: 'flex', gap: 12 }}>
+                <div style={{ display: 'flex', gap: 12 }} className='text-nowrap border border-white rounded-xl shadow-outline-white px-10 py-4 h-full flex items-center gap-2 w-full justify-center cursor-pointer'>
                   <button
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}

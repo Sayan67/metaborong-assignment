@@ -60,3 +60,13 @@
   -webkit-text-stroke: 24px #fff;
   text-stroke: 4px #fff;
 }
+
+.slider-thumb::-webkit-slider-thumb {
+  /* styles for the thumb image */
+  -webkit-appearance: none;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background-image: url('/icons/shiba.svg');
+  
+}

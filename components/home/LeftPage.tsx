@@ -4,6 +4,7 @@ import React, { ReactNode } from 'react'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi';
 import { transactions } from '@/public/content/dummyData';
+import Graph from '../Graph';
 
 
 
@@ -18,9 +19,9 @@ const LeftPage = () => {
                 <Image src={icons.info} width={25} height={25} alt='' />
             </div>
             <div className='w-fit space-y-3'>
-                <div className='min-w-[434px] border-[1.5px] border-white shadow-outline-white rounded-xl h-[200px] bg-[#171A35] flex items-center justify-center'>
-                    {data ?
-                        null
+                <div className='min-w-[434px] border-[1.5px] border-white shadow-outline-white rounded-xl h-[200px] bg-[#171A35] flex items-center justify-center overflow-hidden'>
+                    {status==='connected' ?
+                        <Graph/>
                         :
                         <h1 className='font-dx-bold text-white/30'>No data available</h1>
                     }
@@ -84,7 +85,7 @@ const LeftPage = () => {
                 {new Array(3).fill(0).map((_, index) => {
                     const lineNo = `/icons/line${index + 1}.svg`
                     return (
-                        <div key={index} className=' w-[10rem] relative flex flex-col items-end'>
+                        <div key={index} className=' w-[7.9rem] relative flex flex-col items-end'>
                             <div className='bg-white rounded-full size-4'></div>
                             <Image layout='intrinsic' src={lineNo} width={74} height={4} alt='line' className='absolute w-[10rem] -right-[95%] top-1/2 -translate-y-[45%]'></Image>
                         </div>

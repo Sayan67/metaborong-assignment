@@ -20,4 +20,8 @@ export const icons =
         "arrow-down":'/icons/arrow-down.svg',
         cross:'/icons/cross.svg',
         coinsswap:'/icons/coinsswap.svg',
+        arrowright:'/icons/arrowright.svg',
+        withdraw:'/icons/withdraw.svg',
+        arrowup:'/icons/arrowup.svg',
+        arrowdown_red:'/icons/arrowdown_red.svg',
     }
